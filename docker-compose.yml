@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+    target-api:
+        # 현재 폴더(.)에 있는 Dockerfile을 읽어서 이미지를 빌드합니다.
+        build: .
+        container_name: target-api-server
+        ports:
+            - "8080:80"
+        networks:
+            - security-net
+
+networks:
+    security-net:
+        driver: bridge
