@@ -7,7 +7,10 @@
 * Mac: Settings > Resources > File Sharing에서 프로젝트 디렉토리 경로 추가.
 ex) /프로젝트 디렉토리 경로 -> /username/project directory root (반드시 영문 폴더로 만들 것)
 
-2\. 해당 폴더의 빈 공간에 우클릭 - 터미널 클릭.
+2. Dockerfile과 docker-compose.yml 파일을 폴더에 넣고, 해당 폴더에서 터미널을 실행합니다.
+
+* Windows: 폴더 빈 공간 우클릭 > '터미널에서 열기' 클릭.
+* Mac: 1번에서 설정한 공유 폴더 경로로 이동한 뒤 터미널 실행. (경로가 다르면 파일 공유 권한 에러가 날 수 있으니 주의할 것.)
 
 3\. 터미널에서 ``docker-compose up -d --build`` 입력.
 
